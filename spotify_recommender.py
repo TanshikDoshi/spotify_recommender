@@ -4,7 +4,7 @@ df = pd.read_csv('final.csv')
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MinMaxScaler
 
-features = ['Popularity','acousticness','danceability','instrumentalness','liveness','loudness','tempo','valence']
+features = ['Track Popularity','acousticness','danceability','instrumentalness','liveness','loudness','tempo','valence']
 
 scaler = MinMaxScaler()
 df[features] = scaler.fit_transform(df[features])
