@@ -27,4 +27,4 @@ text_input = st.text_input(
 if text_input:
     best_index = get_recommendations(text_input)
     st.subheader('Recommendation')
-    st.write(df[['Title', 'Description', 'Industry', 'Type of Solution']].iloc[best_index])
+    st.write(df[['Song']].iloc[best_index])
