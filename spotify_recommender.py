@@ -1,4 +1,5 @@
 import pandas as pd
+import streamlit as st
 df = pd.read_csv('final.csv')
 
 from sklearn.metrics.pairwise import cosine_similarity
