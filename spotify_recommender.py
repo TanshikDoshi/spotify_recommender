@@ -29,9 +29,7 @@ input = st.text_input(
     )
 
 if st.button('Recommend'):
-    if input:
-        recommendations = get_recommendations(input)
-        st.subheader('Recommendation')
-        st.write(recommendations)
-    else:
-        st.write('Please provide an input')
+    recommendations = get_recommendations(input)
+    st.subheader('Recommendation')
+    st.write(recommendations)
+    st.write('Please provide an input')
