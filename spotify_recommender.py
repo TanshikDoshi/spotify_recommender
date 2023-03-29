@@ -3,7 +3,7 @@ import streamlit as st
 df = pd.read_csv('final.csv')
 
 st.write("""
-# 890 Recommender
+# Spotify Recommender
 """)
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MinMaxScaler
